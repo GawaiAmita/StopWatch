@@ -10,7 +10,7 @@ const reset_btn = document.getElementById('reset');
 let seconds = 0;
 let interval = null;
 
- //-------------------------------------------------------------------------//
+//-------------------------------------------------------------------------//
 
 //adding eventListener
 
@@ -45,21 +45,18 @@ function timer () {
     let secs = seconds % 60;
 
  
-
-     //condition to get time if no. is less than 10 (makes it 01/02/03.....)
+//condition to get time if no. is less than 10 (makes it 01/02/03.....)
 
      //1.condition for seconds
     if (secs < 10){
 
         secs = "0" + secs;
-
     }
 
     //2.condition for minutes
     if (mins < 10) {
 
         mins = "0" + mins;
-
     }
 
    //-------------------------------------------------------------------------//
@@ -67,7 +64,6 @@ function timer () {
     
    // to display minutes:seconds
     time_el.innerText = `${mins}:${secs}`;
-
 }
 
 //-------------------------------------------------------------------------// 
@@ -76,9 +72,8 @@ function timer () {
 function start ()  {
 
  if (interval) {
-
+  
     return
-
  }
 
  interval = setInterval(timer, 1000);
