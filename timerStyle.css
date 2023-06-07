@@ -194,3 +194,28 @@ button:active {
 
 }
 
+/* CSS code for mobile devices */
+@media (max-width: 767px) {
+  /* Update background position for mobile devices */
+  body {
+    background-position: left;
+  }
+  
+  /* Adjust margin and padding for the box containing timer and buttons */
+  .watch {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Adjust font-size and margin for the timer */
+  .time {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Adjust font-size for the buttons */
+  .buttons button {
+    font-size: 1rem;
+  }
+}
